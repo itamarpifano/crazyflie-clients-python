@@ -7,7 +7,7 @@
 #  +------+    / /_/ / / /_/ /__/ /  / /_/ / / /_/  __/
 #   ||  ||    /_____/_/\__/\___/_/   \__,_/ /___/\___/
 #
-#  Copyright (C) 2011-2013 Bitcraze AB
+#  Copyright (C) 2011-2017 Bitcraze AB
 #
 #  Crazyflie Nano Quadcopter Client
 #
@@ -29,16 +29,16 @@ Find all the available tabs so they can be loaded.
 Dropping a new .py file into this directory will automatically list and load
 it into the UI when it is started.
 """
-
 from .ConsoleTab import ConsoleTab
 # from .ExampleTab import ExampleTab
 from .FlightTab import FlightTab
-from .GpsTab import GpsTab
+# from .GpsTab import GpsTab
 from .LEDTab import LEDTab
 from .LogBlockTab import LogBlockTab
 from .LogTab import LogTab
 from .ParamTab import ParamTab
 from .PlotTab import PlotTab
+from .locopositioning_tab import LocoPositioningTab
 
 __author__ = 'Bitcraze AB'
 __all__ = []
@@ -47,10 +47,11 @@ available = [
     ConsoleTab,
     # ExampleTab,
     FlightTab,
-    GpsTab,
+    # GpsTab,
     LEDTab,
     LogBlockTab,
     LogTab,
     ParamTab,
     PlotTab,
+    LocoPositioningTab,
 ]
